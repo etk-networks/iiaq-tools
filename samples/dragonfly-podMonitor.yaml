@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: dragonfly-sample
+  labels:
+    group: dragonfly
+    app: dragonfly-sample
+spec:
+  selector:
+    matchLabels:
+      app: dragonfly-sample
+  podTargetLabels:
+    - app
+  podMetricsEndpoints:
+  - port: admin
