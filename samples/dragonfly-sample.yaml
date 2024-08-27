@@ -10,8 +10,8 @@ spec:
   replicas: 3
   resources:
     requests:
-      cpu: 300m
-      memory: 300Mi
+      cpu: 500m
+      memory: 500Mi
     limits:
-      cpu: 400m
-      memory: 400Mi
+      cpu: 600m
+      memory: 600Mi
