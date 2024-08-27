@@ -12,3 +12,9 @@
 - [redpanda](databases/redpanda/README.md)
 - [dragonfly](databases/dragonfly/README.md)
 
+
+## Samples
+
+These are some minimal config samples of the tools we use in our k8s cluster:
+
+- Dragonfly Sample
