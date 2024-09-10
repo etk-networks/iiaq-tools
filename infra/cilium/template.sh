@@ -1,5 +1,4 @@
 #!/bin/bash
-
 helm template \
   cilium \
   cilium/cilium \
@@ -17,10 +16,4 @@ helm template \
   --set hubble.ui.enabled=true \
   --set ingressController.enabled=true \
   --set ingressController.loadbalancerMode=dedicated \
-  --set hubble.tls.auto.enabled=true \
-  --set hubble.tls.auto.method=certmanager \
-  --set hubble.tls.auto.certValidityDuration=1095 \
-  --set hubble.tls.auto.certManagerIssuerRef.group="cert-manager.io" \
-  --set hubble.tls.auto.certManagerIssuerRef.kind="ClusterIssuer" \
-  --set hubble.tls.auto.certManagerIssuerRef.name="ca-issuer" \
   --set loadBalancer.l7.backend=envoy >cilium1.16.1.yaml
